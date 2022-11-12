@@ -9,10 +9,9 @@ import {
 } from "@expo-google-fonts/roboto";
 
 import { Loading } from "./src/components/Loading";
-
 import { THEME } from "./src/styles/theme";
 import { SiginIn } from "./src/screens/SignIn";
-import { New } from "./src/screens/New";
+
 import { AuthContextProvider } from "./src/contexts/AuthContext";
 
 export default function App() {
@@ -30,7 +29,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {fontsLoaded ? <New /> : <Loading />}
+        {fontsLoaded ? <SiginIn /> : <Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );

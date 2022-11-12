@@ -7,7 +7,6 @@ import { Button } from "../components/Button";
 
 export default function SiginIn() {
   const { signIn, user } = useAuth();
-  console.log("DADOS DO USUARIO: ", user)
 
   return (
     <Center flex={1} bgColor="gray.900" p={7}>
